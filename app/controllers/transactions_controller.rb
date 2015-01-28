@@ -6,6 +6,14 @@ class TransactionsController < ApplicationController
   def index
     @transactions = Transaction.all
     @total = Transaction.balance
+    if @total == 0
+      @scolding = 'You have no money, go make some! (In accordance with'\
+       'state and federal law)'
+    elsif @total < 0
+      @scolding = "Stop spending money you don't have, you stupid jagaloon!"
+    else
+      @scolding = nil
+    end
   end
 
   # GET /transactions/1
