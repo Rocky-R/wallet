@@ -5,6 +5,7 @@ class TransactionsController < ApplicationController
   # GET /transactions.json
   def index
     @transactions = Transaction.all
+    @total = Transaction.balance
   end
 
   # GET /transactions/1
@@ -69,6 +70,6 @@ class TransactionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def transaction_params
-      params.require(:transaction).permit(:processed_on, :debit, :credit)
+      params.require(:transaction).permit(:processed_on, :debit, :credit, :transaction_description)
     end
 end
