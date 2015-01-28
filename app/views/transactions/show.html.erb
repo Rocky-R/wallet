@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Processed on:</strong>
+  <%= @transaction.processed_on %>
+</p>
+
+<p>
   <strong>Debit:</strong>
   <%= @transaction.debit %>
 </p>
@@ -8,11 +13,6 @@
 <p>
   <strong>Credit:</strong>
   <%= @transaction.credit %>
-</p>
-
-<p>
-  <strong>Balance:</strong>
-  <%= @transaction.balance %>
 </p>
 
 <%= link_to 'Edit', edit_transaction_path(@transaction) %> |

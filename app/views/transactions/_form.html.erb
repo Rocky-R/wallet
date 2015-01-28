@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :processed_on %><br>
+    <%= f.datetime_select :processed_on %>
+  </div>
+  <div class="field">
     <%= f.label :debit %><br>
-    <%= f.number_field :debit %>
+    <%= f.text_field :debit %>
   </div>
   <div class="field">
     <%= f.label :credit %><br>
-    <%= f.number_field :credit %>
-  </div>
-  <div class="field">
-    <%= f.label :balance %><br>
-    <%= f.number_field :balance %>
+    <%= f.text_field :credit %>
   </div>
   <div class="actions">
     <%= f.submit %>

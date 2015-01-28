@@ -1,9 +1,9 @@
 class CreateTransactions < ActiveRecord::Migration
   def change
     create_table :transactions do |t|
-      t.integer :debit
-      t.integer :credit
-      t.integer :balance
+      t.datetime :processed_on
+      t.decimal :debit
+      t.decimal :credit
 
       t.timestamps null: false
     end
