@@ -2,10 +2,11 @@
 
 ## Description
 
-Wallet is a simple web application you can use to keep track of your financial transactions.
+Wallet is a simple web application used to keep track of financial transactions.
 
 ## Directions
-Navigate to http://localhost:3000/
+
+* Navigate to http://localhost:3000/
 
 * Click the "New Transaction" link at the bottom of the Transactions page.
 

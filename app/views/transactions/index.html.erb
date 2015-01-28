@@ -18,7 +18,7 @@
       <tr>
         <td style="padding:0 15px 0 15px;"><%= transaction.processed_on %></td>
         <td style="padding:0 15px 0 15px;"><%= transaction.transaction_description %></td>
-        <td style="padding:0 10px 0 10px;"><%= transaction.debit %></td>
+        <td style="color:red" "padding:0 10px 0 10px;"><%= transaction.debit %></td>
         <td style="padding:0 10px 0 10px;"><%= transaction.credit %></td>
         <td><%= link_to 'Show', transaction %></td>
         <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
